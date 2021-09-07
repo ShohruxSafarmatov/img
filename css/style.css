@@ -12,20 +12,17 @@ body{
 
 .box__wrapper{
   width: 350px;
-  height: 505px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  height: 600px;
   cursor: pointer;
-  transform: translate(-50%, -50%);
   transition: all 0.5s ease;
   transform-style: preserve-3d;
 }
-.box__wrapper:hover{
-  transform: translate(-50%,-50%) rotateX(-180deg);
+.container:hover .box__wrapper{
+  transform:rotateX(-180deg);
 }
 .box img{
-  width: 400px;
+  width: 350px;
+  height: 600px;  
 }
 .item{
   width: 100%;
@@ -50,6 +47,7 @@ body{
 .senior{
  color:#FFFFFF;
  text-align: center;
+ margin-bottom: 50px;
 }
 .item ul{
   display: flex;
@@ -60,11 +58,12 @@ body{
   list-style: none;
   color: #FFFFFF;
   margin-right: 50;
+  align-items: center;
 }
 .icons {
   color: #FFFFFF;
   background: #979494;
   border-radius: 50%;
-  padding: 5px;
+  padding: 15px;
 
 }
